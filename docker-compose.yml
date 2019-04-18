@@ -1,16 +1,16 @@
 version: "3"
 services:
-  mongodb:
+  mongo:
     image: mongo:latest
-    container_name: mongodb
+    container_name: mongo
     ports:
       - "27017:27017"
   app:
     build: .
-    container_name: "fastify"
+    container_name: fastify
     depends_on:
-      - mongodb
+      - mongo
     links:
-      - mongodb
+      - mongo
     ports:
       - 9000:9000

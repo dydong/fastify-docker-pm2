@@ -1,7 +1,7 @@
 FROM keymetrics/pm2:latest-alpine
 WORKDIR /usr/src/app
 COPY package*.json ./
-RUN npm install
+RUN npm install --registry=https://registry.npm.taobao.org
 COPY . .
 ENV APP_SETTINGS_FILE_PATH '/usr/src/app/config/appSettings.json'
 EXPOSE 9000

@@ -1,15 +1,14 @@
 {
-  "name": "node-fastify-api-boilerplate",
-  "version": "1.3.0",
-  "description": "Nodejs API boilerplate using Fastify, MongoDB, Docker, and Postman Mock",
+  "name": "fastify-docker-pm2",
+  "version": "0.0.1",
+  "description": "Nodejs API boilerplate using Fastify, MongoDB, Docker, PM2, and Postman Mock",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "APP_SETTINGS_FILE_PATH=./config/appSettings.json node app.js",
     "start.dev": "nodemon app.js"
   },
-  "author": "Tarush Arora",
-  "license": "ISC",
+  "author": "dyd",
   "dependencies": {
     "aws-sdk": "^2.409.0",
     "bcrypt-nodejs": "0.0.3",

@@ -3,4 +3,4 @@ services:
   app:
     volumes:
       - ./:/usr/src/app
-    command: "pm2-runtime start ecosystem.config.js"
+    command: pm2-runtime start ecosystem.config.js
