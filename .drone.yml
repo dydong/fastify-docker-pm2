@@ -6,4 +6,4 @@ steps:
     image: node
     commands:
       - npm install
-      - npm run start
+      - ./start-prod.sh
