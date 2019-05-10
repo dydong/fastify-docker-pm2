@@ -1,0 +1,6 @@
+pipeline:
+  build: # step name
+    image: node # use docker image
+    commands:
+      - npm install # install node project vendor
+      - npm run start # build static files

@@ -4,7 +4,7 @@
   "description": "Nodejs API boilerplate using Fastify, MongoDB, Docker, PM2, and Postman Mock",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test/root.test.js",
     "start": "APP_SETTINGS_FILE_PATH=./config/appSettings.json node app.js",
     "start.dev": "nodemon app.js"
   },
@@ -25,5 +25,8 @@
     "request-promise-native": "^1.0.7",
     "url-join": "^4.0.0",
     "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "tap": "^12.6.2"
   }
 }
