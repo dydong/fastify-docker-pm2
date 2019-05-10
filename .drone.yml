@@ -6,4 +6,5 @@ steps:
     image: node
     commands:
       - npm install
-      - sudo ./start-prod.sh
+      - chmod 777 start-prod.sh
+      - ./start-prod.sh
