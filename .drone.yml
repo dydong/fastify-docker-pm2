@@ -1,6 +1,9 @@
-pipeline:
-  build: # step name
-    image: node # use docker image
+kind: pipeline
+name: default
+
+steps:
+  - name: backtend
+    image: node
     commands:
-      - npm install # install node project vendor
-      - npm run start # build static files
+      - npm install
+      - npm run start
